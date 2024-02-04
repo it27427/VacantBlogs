@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
   <%- include('../plugins/meta'); -%>
   <!-- PAGE-TITLE -->
@@ -10,7 +10,7 @@
   <%- include('../plugins/styles'); -%>
 </head>
 
-<body class="bg-body-tertiary">
+<body class="bg-body-tertiary position-relative">
 
   <!-- MAIN-SECTION-START -->
   <main class="p-4 p-lg-5 vh-100 d-flex align-items-center justify-content-center">
@@ -19,12 +19,22 @@
         <div class="col-md-8 col-lg-5 mx-md-auto">
           <div class="d-flex flex-column gap-4">
             <div class="d-flex flex-column gap-1 text-center">
-              <a href="/" class="navbar-brand text-dark fw-medium text-uppercase">
+              <a href="/" class="navbar-brand fw-medium text-uppercase" data-bs-theme="light">
                 VacantBlogs
               </a>
               <h4 class="text-center">
                 Login
               </h4>
+              
+              <div class="d-flex align-items-center">
+                <button type="button" class="btn-mode" data-bs-theme-value="light">
+                  <i class="bi bi-brightness-high-fill"></i>
+                </button>
+                
+                <button type="button" class="btn-mode d-none" data-bs-theme-value="dark">
+                  <i class="bi bi-moon-stars-fill"></i>
+                </button>
+              </div>
             </div>
             
             <div class="d-flex flex-column gap-3">
@@ -32,24 +42,24 @@
                 <div class="row g-4">                
                   <div class="col-12">
                     <div class="input-group flex-nowrap">
-                      <span class="input-group-text text-secondary">
+                      <span class="input-group-text text-secondary py-2 px-3">
                         <i class="ri-mail-line"></i>
                       </span>
-                      <input type="email" name="" id="login-email" class="form-control" placeholder="Enter your email address" autocomplete="off">
+                      <input type="email" name="" id="login-email" class="form-control py-2 px-3" placeholder="Enter your email address" autocomplete="off">
                     </div>
                   </div>
     
                   <div class="col-12">
                     <div class="input-group flex-nowrap">
-                      <span class="input-group-text text-secondary">
+                      <span class="input-group-text text-secondary py-2 px-3">
                         <i class="ri-lock-line"></i>
                       </span>
-                      <input type="password" name="" id="login-password" class="form-control" placeholder="Enter your password" autocomplete="off" />
+                      <input type="password" name="" id="login-password" class="form-control py-2 px-3" placeholder="Enter your password" autocomplete="off" />
                     </div>
                   </div>
     
                   <div class="col-12">
-                    <button type="submit" class="btn btn-primary w-100">
+                    <button type="submit" class="btn btn-primary w-100 p-2">
                       Login
                     </button>
                   </div>
