@@ -13,15 +13,62 @@
 <body class="bg-body-tertiary">
 
   <!-- MAIN-SECTION-START -->
-  <main>
+  <main class="p-4 p-lg-5 vh-100 d-flex align-items-center justify-content-center">
     <div class="container">
-      <h1>Login Page</h1>
+      <div class="row">
+        <div class="col-md-8 col-lg-5 mx-md-auto">
+          <div class="d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-1 text-center">
+              <a href="/" class="navbar-brand text-dark fw-medium text-uppercase">
+                VacantBlogs
+              </a>
+              <h4 class="text-center">
+                Login
+              </h4>
+            </div>
+            
+            <div class="d-flex flex-column gap-3">
+              <form class="shadow p-3 p-lg-5 rounded">
+                <div class="row g-4">                
+                  <div class="col-12">
+                    <div class="input-group flex-nowrap">
+                      <span class="input-group-text text-secondary">
+                        <i class="ri-mail-line"></i>
+                      </span>
+                      <input type="email" name="" id="login-email" class="form-control" placeholder="Enter your email address" autocomplete="off">
+                    </div>
+                  </div>
+    
+                  <div class="col-12">
+                    <div class="input-group flex-nowrap">
+                      <span class="input-group-text text-secondary">
+                        <i class="ri-lock-line"></i>
+                      </span>
+                      <input type="password" name="" id="login-password" class="form-control" placeholder="Enter your password" autocomplete="off" />
+                    </div>
+                  </div>
+    
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">
+                      Login
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <p class="text-center">
+                Don't have any account? 
+                <a href="/register" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">
+                  Register
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <!-- MAIN-SECTION-END -->
-
-
-  <%- include('../components/footer'); -%>
   
 
   <%- include('../plugins/scripts'); -%>

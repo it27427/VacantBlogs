@@ -13,55 +13,80 @@
 <body class="bg-body-tertiary">
 
   <!-- MAIN-SECTION-START -->
-  <main>
+  <main class="p-4 p-lg-5 vh-100 d-flex align-items-center justify-content-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-lg-6 mx-md-auto">
-          <form>
-            <div class="row g-4">
-              <div class="col-12">
-                <div class="d-flex flex-column gap-2">
-                  <label for="reg-full-name" class="fs-6">Full Name</label>
-                  <input type="text" name="" id="reg-full-name" class="form-control" placeholder="Enter full name" autocomplete="off" />
-                </div>
-              </div>
-              
-              <div class="col-12">
-                <div class="d-flex flex-column gap-2">
-                  <label for="reg-email" class="fs-6">Email Address</label>
-                  <input type="email" name="" id="reg-email" class="form-control" placeholder="Enter your email address" autocomplete="off" />
-                </div>
-              </div>
-
-              <div class="col-12">
-                <div class="d-flex flex-column gap-2">
-                  <label for="reg-phone-number" class="fs-6">Phone Number</label>
-                  <input type="tel" name="" id="reg-phone-number" class="form-control" placeholder="Enter your phone number" autocomplete="off" />
-                </div>
-              </div>
-
-              <div class="col-12">
-                <div class="d-flex flex-column gap-2">
-                  <label for="reg-password" class="fs-6">Password</label>
-                  <input type="password" name="" id="reg-password" class="form-control" placeholder="Enter your password" autocomplete="off" />
-                </div>
-              </div>
-
-              <div class="col-12">
-                <button type="submit" class="btn btn-outline-primary">
-                  Register
-                </button>
-              </div>
+        <div class="col-md-8 col-lg-5 mx-md-auto">
+          <div class="d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-1 text-center">
+              <a href="/" class="navbar-brand text-dark fw-medium text-uppercase">
+                VacantBlogs
+              </a>
+              <h4 class="text-center">
+                Create Account
+              </h4>
             </div>
-          </form>
+            
+            <div class="d-flex flex-column gap-3">
+              <form class="shadow p-3 p-lg-5 rounded">
+                <div class="row g-4">
+                  <div class="col-12">
+                    <div class="input-group flex-nowrap">
+                      <span class="input-group-text text-secondary">
+                        <i class="ri-user-3-line"></i>
+                      </span>
+                      <input type="text" name="" id="reg-full-name" class="form-control" placeholder="Enter full name" autocomplete="off">
+                    </div>
+                  </div>
+                  
+                  <div class="col-12">
+                    <div class="input-group flex-nowrap">
+                      <span class="input-group-text text-secondary">
+                        <i class="ri-mail-line"></i>
+                      </span>
+                      <input type="email" name="" id="reg-email" class="form-control" placeholder="Enter your email address" autocomplete="off">
+                    </div>
+                  </div>
+    
+                  <div class="col-12">
+                    <div class="input-group flex-nowrap">
+                      <span class="input-group-text text-secondary">
+                        <i class="ri-phone-line"></i>
+                      </span>
+                      <input type="tel" name="" id="reg-phone-number" class="form-control" placeholder="Enter your phone number" autocomplete="off" />
+                    </div>
+                  </div>
+    
+                  <div class="col-12">
+                    <div class="input-group flex-nowrap">
+                      <span class="input-group-text text-secondary">
+                        <i class="ri-lock-line"></i>
+                      </span>
+                      <input type="password" name="" id="reg-password" class="form-control" placeholder="Enter your password" autocomplete="off" />
+                    </div>
+                  </div>
+    
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-outline-primary w-100">
+                      Register
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <p class="text-center">
+                Already have an account? 
+                <a href="/login" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">
+                  Log in
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </main>
   <!-- MAIN-SECTION-END -->
-
-
-  <%- include('../components/footer'); -%>
   
 
   <%- include('../plugins/scripts'); -%>
