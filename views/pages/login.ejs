@@ -25,16 +25,6 @@
               <h4 class="text-center">
                 Login
               </h4>
-              
-              <div class="d-flex align-items-center">
-                <button type="button" class="btn-mode" data-bs-theme-value="light">
-                  <i class="bi bi-brightness-high-fill"></i>
-                </button>
-                
-                <button type="button" class="btn-mode d-none" data-bs-theme-value="dark">
-                  <i class="bi bi-moon-stars-fill"></i>
-                </button>
-              </div>
             </div>
             
             <div class="d-flex flex-column gap-3">
@@ -79,6 +69,18 @@
     </div>
   </main>
   <!-- MAIN-SECTION-END -->
+
+  <div class="position-absolute top-50 end-0">
+    <div class="modebox">
+      <button type="button" class="btn-lights" data-bs-theme-value="light">
+        <i class="bi bi-brightness-high-fill"></i>
+      </button>
+
+      <button type="button" class="btn-darks" data-bs-theme-value="dark">
+        <i class="bi bi-moon-stars-fill"></i>
+      </button>
+    </div>
+  </div>
   
 
   <%- include('../plugins/scripts'); -%>
